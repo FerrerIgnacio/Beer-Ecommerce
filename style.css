@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+/*SECCION DEL BODY*/
+
+.bdy{
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#101010 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #101010 0.8px, #000000 0.8px) -0.4px 0;
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+    height: auto;
+}
+
+/*SECCION CONTENEDOR GENERAL*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 50px 250px 50px 700px 300px 100px 300px 150px 100px 250px;
+    width: 150vh;
+    height: auto;
+    margin: 5px;
+    margin-left: 200px;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#101010 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #101010 0.8px, #000000 0.8px) -0.4px 0;
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+    height: auto;
+}
+
+/*SECCION NAVEGACION PARTE IZQUIERDA*/
+
+.seccion-nav{
+    color: rgb(228, 228, 87);
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    background-color: #000000ab;
+    letter-spacing: 2px;
+}
+
+/*SECCION FOTOS NAVEGACION PARTE DERECHA*/
+
+.seccion-fotos-nav{
+    grid-column: 5/9;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #000000ab;
+}
+
+/* FOTO PRINCIPAL DE LA PAGINA*/
+
+.logo-principal{
+    grid-column: 4/6;
+    grid-row: 2/3;  
+}
+
+/*LOGO DE CARRITO DE COMPRAS Y CILUETA DE PERSONA*/
+
+.seccion-carrito-persona{
+    grid-column: 8/9;
+    grid-row: 2/3;
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+    color: rgba(200, 19, 255, 0.986);
+    filter: invert(100) sepia(1) hue-rotate(20deg) saturate(1000%);    
+}
+
+/*LINEA SEPARADORA DE CARRITO-COMPRAS/CILUETA-PERSONA*/
+
+.line{
+    margin: 5px;
+}
+
+/*SECCION DE NAVEGACION/MENU-PRINCIPAL*/
+
+.seccion-nav2{
+    color: rgb(204, 204, 200);
+    grid-column: 1/9;
+    grid-row: 3/4;
+    display: flex;   
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+/*FOTO PRINCIPAL DE LA PAGINA*/
+
+.f-g-1{
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+
+/*FOTO SUB-PRINCIPAL DE LA PAGINA*/
+
+.f-g-a{
+    grid-column: 1/9;
+    grid-row: auto;
+    filter: brightness(40%);
+}
+
+/*SECCION DE IMAGENES GRIDEADAS SIMULACION DE COMPRA-VENTA*/
+
+.seccion-grideado-img1{
+    grid-column: 1/3;
+}
+
+.seccion-grideado-img2{
+    grid-column:3/5;
+}
+
+.seccion-grideado-img3{
+    grid-column:5/7;
+}
+
+.seccion-grideado-img4{
+    grid-column:7/9;
+}
+
+.img-cerveza-grid{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*CAMBIOS GENERALES DE TODAS LAS IMAGENES GRIDEADAS/COMPRA-VENTA*/
+
+.seccion-grideado-img1,
+.seccion-grideado-img2,
+.seccion-grideado-img3,
+.seccion-grideado-img4{
+    background-color: #d4d0d0;
+    display: flex;
+    justify-content: center;
+    grid-row: 7/8;
+}
+
+/*CAMBIOS GENERALES DEL CARRITO DE COMPRA/IMAGENES-GRIDEADAS*/
+
+.carrito-grid-1,
+.carrito-grid-2,
+.carrito-grid-3,
+.carrito-grid-4{
+    background-color:#d4d0d0;
+    display: flex;
+    grid-row: 8/9;
+}
+
+/*FUENTE DE LOS NAVS Y FOOTER*/
+
+.seccion-nav,
+.seccion-nav2,
+.footer{
+    font-size: 1.2em;
+}
+
+/*ESTILOS PARA EL BOTON DE COMPRA-VENTA/IMAGEN-GRID*/
+
+.boton-clase{
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    top: 90px;
+    right: 90px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: rgb(250, 250, 102);
+    font-size: 15px;
+}
+
+.carrito-grid-1{
+    grid-column:1/3;
+}
+
+.carrito-grid-2{
+    grid-column: 3/5;
+}
+
+.carrito-grid-3{
+    grid-column: 5/7;
+}
+
+.carrito-grid-4{
+    grid-column: 7/9;
+}
+
+.parrafo-carrito{
+  position: relative;
+  left: 25%;
+  top: 5px;
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+.footer{
+    grid-column: 1/9;
+    grid-row: 10/10;
+    color: rgba(228, 228, 87, 0.795);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-footer{
+    position: relative;
+    left: 25px;
+}
